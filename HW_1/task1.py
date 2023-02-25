@@ -3,11 +3,11 @@
 # 123 -> 6 (1 + 2 + 3)
 # 100 -> 1 (1 + 0 + 0)
 
-num=input("Введите трехзначное число: ")
-result=0
-if len(num)==3:
+num = input("Введите трехзначное число: ")
+result = 0
+if len(num) == 3:
     for i in num:
-        result+=int(i)
+        result += int(i)
     print(f"{num} -> {result}")
 else:
     print("Ввведено нетрехзначное число")

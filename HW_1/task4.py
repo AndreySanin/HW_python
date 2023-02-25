@@ -6,7 +6,10 @@
 # 3 2 1 -> no
 
 m, n, k = int(input("m = ")), int(input("n = ")), int(input("k = "))
-if k%m==0 or k%n==0:
-    print("yes")
+if k >= min(m, n) and k < m*n:
+    if k % m == 0 or k % n == 0:
+        print("yes")
+    else:
+        print("no")
 else:
-    print("no")
+    print("Недопустимое значение k")

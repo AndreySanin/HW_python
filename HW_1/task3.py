@@ -6,14 +6,14 @@
 # 385916 -> yes
 # 123456 -> no
 
-num=input("Введите номер билета (шестизначное чиcло): ")
-if len(num)==6:
-    first_3=0
-    last_3=0
+num = input("Введите номер билета (шестизначное чиcло): ")
+if len(num) == 6:
+    first_3 = 0
+    last_3 = 0
     for i in range(int(len(num)/2)):
-        first_3+=int(num[i])
-        last_3+=int(num[-i-1])
-    if first_3==last_3:
+        first_3 += int(num[i])
+        last_3 += int(num[-i-1])
+    if first_3 == last_3:
         print("yes")
     else:
         print("no")
